@@ -13,20 +13,27 @@
             align-content: center;
         }
 
-        img {
-            height: 700px;
-            width: 500px;
+        .eslam {
+             height: 100vh
+            
         }
 
         .clock {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
             color: #17D4FE;
-            font-size: 50px;
+            font-size: 3vw; /* Adjust font size for responsiveness */
             font-family: Orbitron;
-            letter-spacing: 7px;
+            letter-spacing: 0.5vw; /* Adjust letter spacing for responsiveness */
+            margin-top: 2vw; /* Add some margin for better spacing */
+        }
+        @media (max-width: 500px){
+            .clock {
+                font-size: 13vw;
+            }
+            .eslam
+            {
+                height: auto
+            }
         }
     </style>
 </head>
@@ -35,7 +42,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
-                <img width="50%" src="img/0bb217b0-dc64-40c8-bf6f-a011ce22e93c.jpg">
+                <img class="w-100 eslam" src="img/0bb217b0-dc64-40c8-bf6f-a011ce22e93c.jpg">
             </div>
             <div class="col-md-4">
                 <div class="clock">
@@ -46,7 +53,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img width="50%" src="img/16a04975-acc8-423a-aa40-1dffe58e7f89.jpg">
+                <img class="w-100 eslam" src="img/16a04975-acc8-423a-aa40-1dffe58e7f89.jpg">
             </div>
         </div>
     </div>
